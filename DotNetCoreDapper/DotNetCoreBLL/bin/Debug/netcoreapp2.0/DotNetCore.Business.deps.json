@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "DotNetCore.Business/1.0.0": {
+        "dependencies": {
+          "DotNetCore.Business.Interfaces": "1.0.0",
+          "DotNetCore.Entities": "1.0.0",
+          "DotNetCore.Repository.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "DotNetCore.Business.dll": {}
+        }
+      },
+      "DotNetCore.Business.Interfaces/1.0.0": {
+        "runtime": {
+          "DotNetCore.Business.Interfaces.dll": {}
+        }
+      },
+      "DotNetCore.Entities/1.0.0": {
+        "runtime": {
+          "DotNetCore.Entities.dll": {}
+        }
+      },
+      "DotNetCore.Repository.Interfaces/1.0.0": {
+        "dependencies": {
+          "DotNetCore.Entities": "1.0.0"
+        },
+        "runtime": {
+          "DotNetCore.Repository.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DotNetCore.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DotNetCore.Business.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DotNetCore.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DotNetCore.Repository.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,13 @@
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\bin\Debug\netcoreapp2.0\DotNetCore.Entities.dll
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\bin\Debug\netcoreapp2.0\DotNetCore.Repository.Interfaces.dll
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\obj\Debug\netcoreapp2.0\DotNetCore.Repository.csprojResolveAssemblyReference.cache
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\obj\Debug\netcoreapp2.0\DotNetCore.Repository.csproj.CoreCompileInputs.cache
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\obj\Debug\netcoreapp2.0\DotNetCore.Repository.AssemblyInfoInputs.cache
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\obj\Debug\netcoreapp2.0\DotNetCore.Repository.AssemblyInfo.cs
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\bin\Debug\netcoreapp2.0\DotNetCore.Repository.deps.json
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\bin\Debug\netcoreapp2.0\DotNetCore.Repository.dll
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\bin\Debug\netcoreapp2.0\DotNetCore.Repository.pdb
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\bin\Debug\netcoreapp2.0\DotNetCore.Entities.pdb
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\bin\Debug\netcoreapp2.0\DotNetCore.Repository.Interfaces.pdb
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\obj\Debug\netcoreapp2.0\DotNetCore.Repository.dll
+F:\testDemo\DotNetCoreDapper\DotNetCoreServices\obj\Debug\netcoreapp2.0\DotNetCore.Repository.pdb

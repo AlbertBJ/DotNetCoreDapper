@@ -1,0 +1,9 @@
+F:\testDemo\DotNetCoreDapper\DotNetCore.Entities\bin\Debug\netcoreapp2.0\DotNetCore.Entities.deps.json
+F:\testDemo\DotNetCoreDapper\DotNetCore.Entities\bin\Debug\netcoreapp2.0\DotNetCore.Entities.dll
+F:\testDemo\DotNetCoreDapper\DotNetCore.Entities\bin\Debug\netcoreapp2.0\DotNetCore.Entities.pdb
+F:\testDemo\DotNetCoreDapper\DotNetCore.Entities\obj\Debug\netcoreapp2.0\DotNetCore.Entities.csproj.CoreCompileInputs.cache
+F:\testDemo\DotNetCoreDapper\DotNetCore.Entities\obj\Debug\netcoreapp2.0\DotNetCore.Entities.AssemblyInfoInputs.cache
+F:\testDemo\DotNetCoreDapper\DotNetCore.Entities\obj\Debug\netcoreapp2.0\DotNetCore.Entities.AssemblyInfo.cs
+F:\testDemo\DotNetCoreDapper\DotNetCore.Entities\obj\Debug\netcoreapp2.0\DotNetCore.Entities.dll
+F:\testDemo\DotNetCoreDapper\DotNetCore.Entities\obj\Debug\netcoreapp2.0\DotNetCore.Entities.pdb
+F:\testDemo\DotNetCoreDapper\DotNetCore.Entities\obj\Debug\netcoreapp2.0\DotNetCore.Entities.csprojResolveAssemblyReference.cache
