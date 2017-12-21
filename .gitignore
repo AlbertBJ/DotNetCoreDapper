@@ -3,3 +3,9 @@
 ################################################################################
 
 /DotNetCoreDapper/DotNetCore.Business/obj
+/DotNetCoreDapper/DotNetCore.Business/bin/Debug/netcoreapp2.0
+/DotNetCoreDapper/DotNetCore.Business.Interfaces/obj
+/DotNetCoreDapper/DotNetCore.Business.Interfaces/bin/Debug/netcoreapp2.0
+/DotNetCoreDapper/DotNetCore.Repository/obj
+/DotNetCoreDapper/DotNetCore.Repository/bin/Debug/netcoreapp2.0
+/DotNetCoreDapper/DotNetCoreDapper/DotNetCoreDapper.API.csproj.user

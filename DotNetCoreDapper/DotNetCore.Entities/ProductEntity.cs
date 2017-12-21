@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
+
 namespace DotNetCore.Entities
 {
     /// <summary>
@@ -49,4 +50,15 @@ namespace DotNetCore.Entities
         public decimal Price { get; set; }
        
     }
+
+    //public class ProductEntityMapper : ClassMapper<ProductEntity>
+    //{
+    //    public BookMapper()
+    //    {
+    //        Table("Book1");
+    //        Map(x => x.Reviews).Ignore();
+    //        Map(x => x.Name).Column("name1");
+    //        AutoMap();
+    //    }
+    //}
 }

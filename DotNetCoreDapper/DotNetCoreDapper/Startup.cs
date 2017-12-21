@@ -11,6 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyModel;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using DotNetCore.Entities;
+using DotNetCore.Repository.Interfaces;
+using DotNetCore.Repository;
 
 namespace DotNetCoreDapper
 {
@@ -26,6 +29,10 @@ namespace DotNetCoreDapper
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddOptions();
+
+            services.Configure<Option>(Configuration.GetSection("Option"));
 
             #region 注册
             //全局注册
@@ -44,10 +51,10 @@ namespace DotNetCoreDapper
                     services.AddTransient(itemInterface, itemClass.Key);
                 }
             }
-            //services.AddTransient();
+            //注册泛型
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));    
             #endregion
-
-
+            
             services.AddMvc();
         }
 
@@ -63,15 +70,15 @@ namespace DotNetCoreDapper
         }
 
         #region 辅助类
-        private Dictionary<Type, Type[]> GetClassInterfacePairs(string assemblyName)
+        private Dictionary<Type, List<Type>> GetClassInterfacePairs(string assemblyName)
         {
             //存储 实现类 以及 对应接口 
-            Dictionary<Type, Type[]> dic = new Dictionary<Type, Type[]>();
+            Dictionary<Type, List<Type>> dic = new Dictionary<Type, List<Type>>();
             Assembly assembly = GetAssembly(assemblyName);
             Type[] types = assembly.GetTypes();
-            foreach (var item in types.AsEnumerable().Where(x => !x.IsAbstract && !x.IsInterface))
+            foreach (var item in types.AsEnumerable().Where(x => !x.IsAbstract && !x.IsInterface && !x.IsGenericType))
             {
-                dic.Add(item, item.GetInterfaces());
+                dic.Add(item, item.GetInterfaces().Where(x => !x.IsGenericType).ToList());
             }
             return dic;
         }

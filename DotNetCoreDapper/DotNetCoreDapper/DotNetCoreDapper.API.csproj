@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Models\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -17,11 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotNetCore.DAL\DotNetCore.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\DotNetCore.Business.Interfaces\DotNetCore.Business.Interfaces.csproj" />
     <ProjectReference Include="..\DotNetCore.Entities\DotNetCore.Entities.csproj" />
     <ProjectReference Include="..\DotNetCore.Repository.Interfaces\DotNetCore.Repository.Interfaces.csproj" />
-    <ProjectReference Include="..\DotNetCoreBLL\DotNetCore.Business.csproj" />
-    <ProjectReference Include="..\DotNetCoreServices\DotNetCore.Repository.csproj" />
+    <ProjectReference Include="..\DotNetCore.Business\DotNetCore.Business.csproj" />
+    <ProjectReference Include="..\DotNetCore.Repository\DotNetCore.Repository.csproj" />
   </ItemGroup>
 
 </Project>

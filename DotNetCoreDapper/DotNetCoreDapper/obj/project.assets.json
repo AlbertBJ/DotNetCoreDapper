@@ -2684,6 +2684,27 @@
           }
         }
       },
+      "MySql.Data/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.4.0",
+          "System.Security.Permissions": "4.4.0",
+          "System.Text.Encoding.CodePages": "4.0.1"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/MySql.Data.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -3276,6 +3297,18 @@
         },
         "runtime": {
           "lib/netstandard1.5/System.ComponentModel.TypeConverter.dll": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "4.4.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Console/4.3.0": {
@@ -4321,6 +4354,21 @@
           "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
         }
       },
+      "System.Security.Cryptography.ProtectedData/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Security.Cryptography.X509Certificates/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4371,6 +4419,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Cryptography.Xml.dll": {}
+        }
+      },
+      "System.Security.Permissions/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.4.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Security.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Permissions.dll": {}
         }
       },
       "System.Security.Principal/4.3.0": {
@@ -4462,7 +4522,7 @@
           "Microsoft.NETCore.Platforms": "2.0.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
@@ -4775,6 +4835,9 @@
       "DotNetCore.Business.Interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "DotNetCore.Entities": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DotNetCore.Business.Interfaces.dll": {}
         },
@@ -4798,7 +4861,8 @@
         "dependencies": {
           "Dapper": "1.50.4",
           "DotNetCore.Entities": "1.0.0",
-          "DotNetCore.Repository.Interfaces": "1.0.0"
+          "DotNetCore.Repository.Interfaces": "1.0.0",
+          "MySql.Data": "6.10.5"
         },
         "compile": {
           "bin/placeholder/DotNetCore.Repository.dll": {}
@@ -7481,6 +7545,88 @@
         "version.txt"
       ]
     },
+    "MySql.Data/6.10.5": {
+      "sha512": "XSrM/JWLHfikLZPn1yr/rERDPFeqzjr0f6aKGolA2Mxl+4RZiYZqFEu8lRJ4UwwOI3sa3KqLxUBva4rsrL+G6Q==",
+      "type": "package",
+      "path": "mysql.data/6.10.5",
+      "files": [
+        "content/app.config.transform",
+        "content/docs/MySqlCommand.xml",
+        "content/docs/MySqlCommandBuilder.xml",
+        "content/docs/MySqlConnection.xml",
+        "content/docs/MySqlConnectionStringBuilder.xml",
+        "content/docs/MySqlDataAdapter.xml",
+        "content/docs/MySqlDataReader.xml",
+        "content/docs/MySqlException.xml",
+        "content/docs/MySqlHelper.xml",
+        "content/docs/MySqlParameter.xml",
+        "content/docs/MySqlParameterCollection.xml",
+        "content/docs/MySqlTransaction.xml",
+        "content/web.config.transform",
+        "contentFiles/any/net452/app.config.transform",
+        "contentFiles/any/net452/docs/MySqlCommand.xml",
+        "contentFiles/any/net452/docs/MySqlCommandBuilder.xml",
+        "contentFiles/any/net452/docs/MySqlConnection.xml",
+        "contentFiles/any/net452/docs/MySqlConnectionStringBuilder.xml",
+        "contentFiles/any/net452/docs/MySqlDataAdapter.xml",
+        "contentFiles/any/net452/docs/MySqlDataReader.xml",
+        "contentFiles/any/net452/docs/MySqlException.xml",
+        "contentFiles/any/net452/docs/MySqlHelper.xml",
+        "contentFiles/any/net452/docs/MySqlParameter.xml",
+        "contentFiles/any/net452/docs/MySqlParameterCollection.xml",
+        "contentFiles/any/net452/docs/MySqlTransaction.xml",
+        "contentFiles/any/net452/web.config.transform",
+        "contentFiles/any/netcoreapp2.0/app.config.transform",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlCommand.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlCommandBuilder.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlConnection.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlConnectionStringBuilder.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlDataAdapter.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlDataReader.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlException.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlHelper.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlParameter.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlParameterCollection.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlTransaction.xml",
+        "contentFiles/any/netcoreapp2.0/web.config.transform",
+        "contentFiles/any/netstandard1.3/app.config.transform",
+        "contentFiles/any/netstandard1.3/docs/MySqlCommand.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlCommandBuilder.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlConnection.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlConnectionStringBuilder.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlDataAdapter.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlDataReader.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlException.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlHelper.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlParameter.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlParameterCollection.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlTransaction.xml",
+        "contentFiles/any/netstandard1.3/web.config.transform",
+        "contentFiles/any/netstandard2.0/app.config.transform",
+        "contentFiles/any/netstandard2.0/docs/MySqlCommand.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlCommandBuilder.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlConnection.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlConnectionStringBuilder.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlDataAdapter.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlDataReader.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlException.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlHelper.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlParameter.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlParameterCollection.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlTransaction.xml",
+        "contentFiles/any/netstandard2.0/web.config.transform",
+        "lib/net452/MySql.Data.dll",
+        "lib/net452/MySql.Data.xml",
+        "lib/netcoreapp2.0/MySql.Data.dll",
+        "lib/netcoreapp2.0/MySql.Data.xml",
+        "lib/netstandard1.3/MySql.Data.dll",
+        "lib/netstandard1.3/MySql.Data.xml",
+        "lib/netstandard2.0/MySql.Data.dll",
+        "lib/netstandard2.0/MySql.Data.xml",
+        "mysql.data.6.10.5.nupkg.sha512",
+        "mysql.data.nuspec"
+      ]
+    },
     "NETStandard.Library/2.0.0": {
       "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
       "type": "package",
@@ -8593,6 +8739,25 @@
         "ref/xamarinwatchos10/_._",
         "system.componentmodel.typeconverter.4.3.0.nupkg.sha512",
         "system.componentmodel.typeconverter.nuspec"
+      ]
+    },
+    "System.Configuration.ConfigurationManager/4.4.0": {
+      "sha512": "gWwQv/Ug1qWJmHCmN17nAbxJYmQBM/E94QxKLksvUiiKB1Ld3Sc/eK1lgmbSjDFxkQhVuayI/cGFZhpBSodLrg==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/4.4.0",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "ref/net461/System.Configuration.ConfigurationManager.dll",
+        "ref/net461/System.Configuration.ConfigurationManager.xml",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.4.4.0.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Console/4.3.0": {
@@ -11392,6 +11557,45 @@
         "system.security.cryptography.primitives.nuspec"
       ]
     },
+    "System.Security.Cryptography.ProtectedData/4.4.0": {
+      "sha512": "cJV7ScGW7EhatRsjehfvvYVBvtiSMKgN8bOVI0bQhnF5bU7vnHVIsH49Kva7i7GWaWYvmEzkYVk1TC+gZYBEog==",
+      "type": "package",
+      "path": "system.security.cryptography.protecteddata/4.4.0",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.ProtectedData.dll",
+        "ref/net461/System.Security.Cryptography.ProtectedData.dll",
+        "ref/net461/System.Security.Cryptography.ProtectedData.xml",
+        "ref/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net46/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Security.Cryptography.X509Certificates/4.3.0": {
       "sha512": "t2Tmu6Y2NtJ2um0RtcuhP7ZdNNxXEgUm2JeoA/0NvlMjAhKCnM1NX07TDl3244mVp3QU6LPEhT3HTtH1uF7IYw==",
       "type": "package",
@@ -11461,6 +11665,24 @@
         "ref/netstandard2.0/System.Security.Cryptography.Xml.xml",
         "system.security.cryptography.xml.4.4.0.nupkg.sha512",
         "system.security.cryptography.xml.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Permissions/4.4.0": {
+      "sha512": "ArK+Kh7BSqWhspqO3qe8R25MeUzBm3ZdWbYiN6Q0kLO3nR4dLeZzS03C0QUI/470w7pGRm7lUZ9sjfDQKJjRcQ==",
+      "type": "package",
+      "path": "system.security.permissions/4.4.0",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Security.Permissions.dll",
+        "lib/netstandard2.0/System.Security.Permissions.dll",
+        "ref/net461/System.Security.Permissions.dll",
+        "ref/netstandard2.0/System.Security.Permissions.dll",
+        "ref/netstandard2.0/System.Security.Permissions.xml",
+        "system.security.permissions.4.4.0.nupkg.sha512",
+        "system.security.permissions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -12626,13 +12848,13 @@
     },
     "DotNetCore.Business/1.0.0": {
       "type": "project",
-      "path": "../DotNetCoreBLL/DotNetCore.Business.csproj",
-      "msbuildProject": "../DotNetCoreBLL/DotNetCore.Business.csproj"
+      "path": "../DotNetCore.Business/DotNetCore.Business.csproj",
+      "msbuildProject": "../DotNetCore.Business/DotNetCore.Business.csproj"
     },
     "DotNetCore.Business.Interfaces/1.0.0": {
       "type": "project",
-      "path": "../DotNetCore.DAL/DotNetCore.Business.Interfaces.csproj",
-      "msbuildProject": "../DotNetCore.DAL/DotNetCore.Business.Interfaces.csproj"
+      "path": "../DotNetCore.Business.Interfaces/DotNetCore.Business.Interfaces.csproj",
+      "msbuildProject": "../DotNetCore.Business.Interfaces/DotNetCore.Business.Interfaces.csproj"
     },
     "DotNetCore.Entities/1.0.0": {
       "type": "project",
@@ -12641,8 +12863,8 @@
     },
     "DotNetCore.Repository/1.0.0": {
       "type": "project",
-      "path": "../DotNetCoreServices/DotNetCore.Repository.csproj",
-      "msbuildProject": "../DotNetCoreServices/DotNetCore.Repository.csproj"
+      "path": "../DotNetCore.Repository/DotNetCore.Repository.csproj",
+      "msbuildProject": "../DotNetCore.Repository/DotNetCore.Repository.csproj"
     },
     "DotNetCore.Repository.Interfaces/1.0.0": {
       "type": "project",
@@ -12672,11 +12894,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "F:\\testDemo\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCoreDapper.API.csproj",
+      "projectUniqueName": "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCoreDapper.API.csproj",
       "projectName": "DotNetCoreDapper.API",
-      "projectPath": "F:\\testDemo\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCoreDapper.API.csproj",
+      "projectPath": "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCoreDapper.API.csproj",
       "packagesPath": "C:\\Users\\wangfabei\\.nuget\\packages\\",
-      "outputPath": "F:\\testDemo\\DotNetCoreDapper\\DotNetCoreDapper\\obj\\",
+      "outputPath": "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCoreDapper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -12697,20 +12919,20 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "F:\\testDemo\\DotNetCoreDapper\\DotNetCore.Repository.Interfaces\\DotNetCore.Repository.Interfaces.csproj": {
-              "projectPath": "F:\\testDemo\\DotNetCoreDapper\\DotNetCore.Repository.Interfaces\\DotNetCore.Repository.Interfaces.csproj"
+            "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCore.Repository.Interfaces\\DotNetCore.Repository.Interfaces.csproj": {
+              "projectPath": "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCore.Repository.Interfaces\\DotNetCore.Repository.Interfaces.csproj"
             },
-            "F:\\testDemo\\DotNetCoreDapper\\DotNetCoreServices\\DotNetCore.Repository.csproj": {
-              "projectPath": "F:\\testDemo\\DotNetCoreDapper\\DotNetCoreServices\\DotNetCore.Repository.csproj"
+            "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCore.Business\\DotNetCore.Business.csproj": {
+              "projectPath": "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCore.Business\\DotNetCore.Business.csproj"
             },
-            "F:\\testDemo\\DotNetCoreDapper\\DotNetCore.DAL\\DotNetCore.Business.Interfaces.csproj": {
-              "projectPath": "F:\\testDemo\\DotNetCoreDapper\\DotNetCore.DAL\\DotNetCore.Business.Interfaces.csproj"
+            "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCore.Business.Interfaces\\DotNetCore.Business.Interfaces.csproj": {
+              "projectPath": "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCore.Business.Interfaces\\DotNetCore.Business.Interfaces.csproj"
             },
-            "F:\\testDemo\\DotNetCoreDapper\\DotNetCore.Entities\\DotNetCore.Entities.csproj": {
-              "projectPath": "F:\\testDemo\\DotNetCoreDapper\\DotNetCore.Entities\\DotNetCore.Entities.csproj"
+            "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCore.Repository\\DotNetCore.Repository.csproj": {
+              "projectPath": "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCore.Repository\\DotNetCore.Repository.csproj"
             },
-            "F:\\testDemo\\DotNetCoreDapper\\DotNetCoreBLL\\DotNetCore.Business.csproj": {
-              "projectPath": "F:\\testDemo\\DotNetCoreDapper\\DotNetCoreBLL\\DotNetCore.Business.csproj"
+            "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCore.Entities\\DotNetCore.Entities.csproj": {
+              "projectPath": "F:\\testDemo\\vsGit\\DotNetCoreDapper\\DotNetCoreDapper\\DotNetCore.Entities\\DotNetCore.Entities.csproj"
             }
           }
         }
