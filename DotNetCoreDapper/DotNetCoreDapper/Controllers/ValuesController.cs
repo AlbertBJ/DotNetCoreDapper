@@ -26,7 +26,8 @@ namespace DotNetCoreDapper.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return iProduct.test();
+            return string.Empty;
+            //return iProduct.GetList("SELECT * FROM Product ").ToString(); 
         }
 
         // POST api/values
