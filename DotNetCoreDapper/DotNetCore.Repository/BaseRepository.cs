@@ -22,8 +22,17 @@ namespace DotNetCore.Repository
         protected readonly MySqlConnection connection;
         public BaseRepository(IOptionsSnapshot<Option> optionsAccessor)
         {
-            _option = optionsAccessor.Value;
-            connection = new MySqlConnection() { ConnectionString = _option.ConnectionString };
+            try
+            {
+                _option = optionsAccessor.Value;
+                connection = new MySqlConnection() { ConnectionString = _option.ConnectionString };
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
         /// <summary>
         /// 查询所有

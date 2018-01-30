@@ -17,6 +17,7 @@ namespace DotNetCoreDapper.Controllers
         }
         // GET api/values
         [HttpGet]
+        [ApiExplorerSettings(GroupName = "docV1")]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
@@ -24,6 +25,7 @@ namespace DotNetCoreDapper.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
+        [ApiExplorerSettings(GroupName = "docV1")]
         public string Get(int id)
         {
             return string.Empty;
@@ -32,18 +34,21 @@ namespace DotNetCoreDapper.Controllers
 
         // POST api/values
         [HttpPost]
+        [ApiExplorerSettings(GroupName = "docV2")]
         public void Post([FromBody]string value)
         {
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
+        [ApiExplorerSettings(GroupName = "docV2")]
         public void Put(int id, [FromBody]string value)
         {
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
+        [ApiExplorerSettings(GroupName = "docV2")]
         public void Delete(int id)
         {
         }

@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreDapper.API", "DotNetCoreDapper\DotNetCoreDapper.API.csproj", "{B859D608-DA95-493F-9D93-F10B1DEC866A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreDapper.API", "DotNetCoreDapper\DotNetCoreDapper.API.csproj", "{B859D608-DA95-493F-9D93-F10B1DEC866A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.Repository", "DotNetCore.Repository\DotNetCore.Repository.csproj", "{6F25861F-1494-4DB1-909B-5EA1EF5DE475}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.Repository", "DotNetCore.Repository\DotNetCore.Repository.csproj", "{6F25861F-1494-4DB1-909B-5EA1EF5DE475}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.Business", "DotNetCore.Business\DotNetCore.Business.csproj", "{AF820EE3-C2A0-41D6-8E80-7C24C5586E13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.Business", "DotNetCore.Business\DotNetCore.Business.csproj", "{AF820EE3-C2A0-41D6-8E80-7C24C5586E13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.Business.Interfaces", "DotNetCore.Business.Interfaces\DotNetCore.Business.Interfaces.csproj", "{8E111F85-53D4-4438-B717-A3D53CC4FF65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.Business.Interfaces", "DotNetCore.Business.Interfaces\DotNetCore.Business.Interfaces.csproj", "{8E111F85-53D4-4438-B717-A3D53CC4FF65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.Repository.Interfaces", "DotNetCore.Repository.Interfaces\DotNetCore.Repository.Interfaces.csproj", "{9DBD0CD0-EB29-45A4-9157-34F356FF75D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.Repository.Interfaces", "DotNetCore.Repository.Interfaces\DotNetCore.Repository.Interfaces.csproj", "{9DBD0CD0-EB29-45A4-9157-34F356FF75D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.Entities", "DotNetCore.Entities\DotNetCore.Entities.csproj", "{C7EB88F5-F1C7-4E8F-883C-998B6CA6BBBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.Entities", "DotNetCore.Entities\DotNetCore.Entities.csproj", "{C7EB88F5-F1C7-4E8F-883C-998B6CA6BBBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

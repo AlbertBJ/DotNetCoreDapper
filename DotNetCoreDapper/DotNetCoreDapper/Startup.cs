@@ -14,6 +14,7 @@ using Microsoft.Extensions.Options;
 using DotNetCore.Entities;
 using DotNetCore.Repository.Interfaces;
 using DotNetCore.Repository;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace DotNetCoreDapper
 {
@@ -52,9 +53,20 @@ namespace DotNetCoreDapper
                 }
             }
             //注册泛型
-            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));    
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             #endregion
-            
+
+            //详细的swagger使用，请见github:https://github.com/AlbertBJ/aspDotNetSwagger
+            services.AddSwaggerGen(op =>
+            {
+                op.SwaggerDoc("docV1", new Info { Version = "v1", Title = "docTitle", Description = "描述接口实现什么内容", TermsOfService = "不能用于商业，仅供学习", Contact = new Contact { Name = "联系人", Url = "网址", Email = "xxx@xxx.com" }, License = new License { Name = "MIT", Url = "https://coursera.com" } });
+
+                op.SwaggerDoc("docV2", new Info { Version = "v2", Title = "docTitle2", Description = "描述接口实现什么内容2", TermsOfService = "不能用于商业，仅供学习2", Contact = new Contact { Name = "联系人2", Url = "网址2", Email = "xxx2@xxx.com" }, License = new License { Name = "MIT", Url = "https://coursera.com" } });
+ 
+
+            });
+
+
             services.AddMvc();
         }
 
@@ -65,8 +77,24 @@ namespace DotNetCoreDapper
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            // 使Swagger中间件生效 core中 组件都是以中间件形式,定义接口文档生成格式.：
+            app.UseSwagger(
+                c =>
+                {
+                    c.RouteTemplate = "api-docs/{documentName}/swagger11.json";
+                });
 
+            //启用swaggerUI  在此处的docV1必须与  op.SwaggerDoc name一致
+            app.UseSwaggerUI(c =>
+            {
+                c.RoutePrefix = "api-docs";//访问接口此时可以使用 xxxx/api-docs
+                c.SwaggerEndpoint("/api-docs/docV1/swagger11.json", "DemoApiV1");
+
+                c.SwaggerEndpoint("/api-docs/docV2/swagger11.json", "DemoApiV2");                 
+            });
             app.UseMvc();
+            
         }
 
         #region 辅助类

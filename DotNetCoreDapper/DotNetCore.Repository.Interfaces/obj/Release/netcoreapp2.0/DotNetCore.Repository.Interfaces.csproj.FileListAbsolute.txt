@@ -1,0 +1,11 @@
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Repository.Interfaces\bin\Release\netcoreapp2.0\DotNetCore.Repository.Interfaces.deps.json
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Repository.Interfaces\bin\Release\netcoreapp2.0\DotNetCore.Repository.Interfaces.dll
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Repository.Interfaces\bin\Release\netcoreapp2.0\DotNetCore.Repository.Interfaces.pdb
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Repository.Interfaces\bin\Release\netcoreapp2.0\DotNetCore.Entities.dll
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Repository.Interfaces\bin\Release\netcoreapp2.0\DotNetCore.Entities.pdb
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Repository.Interfaces\obj\Release\netcoreapp2.0\DotNetCore.Repository.Interfaces.csprojResolveAssemblyReference.cache
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Repository.Interfaces\obj\Release\netcoreapp2.0\DotNetCore.Repository.Interfaces.csproj.CoreCompileInputs.cache
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Repository.Interfaces\obj\Release\netcoreapp2.0\DotNetCore.Repository.Interfaces.AssemblyInfoInputs.cache
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Repository.Interfaces\obj\Release\netcoreapp2.0\DotNetCore.Repository.Interfaces.AssemblyInfo.cs
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Repository.Interfaces\obj\Release\netcoreapp2.0\DotNetCore.Repository.Interfaces.dll
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Repository.Interfaces\obj\Release\netcoreapp2.0\DotNetCore.Repository.Interfaces.pdb

@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  dotnetcoredapper.api:
+    image: dotnetcoredapper.api
+    build:
+      context: .
+      dockerfile: DotNetCoreDapper\Dockerfile

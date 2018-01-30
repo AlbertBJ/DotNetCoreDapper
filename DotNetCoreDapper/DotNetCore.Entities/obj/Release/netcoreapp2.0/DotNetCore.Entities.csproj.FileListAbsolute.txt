@@ -1,0 +1,9 @@
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Entities\bin\Release\netcoreapp2.0\DotNetCore.Entities.deps.json
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Entities\bin\Release\netcoreapp2.0\DotNetCore.Entities.dll
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Entities\bin\Release\netcoreapp2.0\DotNetCore.Entities.pdb
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Entities\obj\Release\netcoreapp2.0\DotNetCore.Entities.csprojResolveAssemblyReference.cache
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Entities\obj\Release\netcoreapp2.0\DotNetCore.Entities.csproj.CoreCompileInputs.cache
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Entities\obj\Release\netcoreapp2.0\DotNetCore.Entities.AssemblyInfoInputs.cache
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Entities\obj\Release\netcoreapp2.0\DotNetCore.Entities.AssemblyInfo.cs
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Entities\obj\Release\netcoreapp2.0\DotNetCore.Entities.dll
+F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper\DotNetCore.Entities\obj\Release\netcoreapp2.0\DotNetCore.Entities.pdb

@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  dotnetcoredapper.api:
+    build:
+      context: F:\testDemo\vsGit\DotNetCoreDapper\DotNetCoreDapper
+      dockerfile: DotNetCoreDapper\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: dotnetcoredapper.api
+    ports:
+    - 80/tcp
+version: '3.0'
